@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="flex flex-col bg-[#212529] w-full h-full">
+    <header class="nav flex justify-center p-1 bg-[#1c1c1c]">
+      <div class="flex justify-end">
+        <a class="mr-5 hover:underline text-[#20c997]" href="" onclick="remove()">Remove</a>
+        <a class="mr-5 hover:underline text-[#20c997]" href="" onclick="find()">Find</a>
+        <a class="mr-5 hover:underline text-[#20c997]" href="" onclick="sort()">Sort</a>
+      </div>
+    </header>
+
+    <main class="flex  items-center justify-start flex-col p-1">
+      <div class="showBlock flex  items-center justify-start flex-col">
+        <h1 class="mt-10" id="1-12"><b>Reading List</b></h1>
+        <p class="pt-2 w-11/12">
+          <table class="table">
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Rate</th>
+            </tr>
+          </table>
+        </p>
+      </div>
+      <div class="addBlock flex items-center justify-start flex-col">
+        <h1 class="mt-10" id="1-12"><b>Adding new books</b></h1>
+        <div class="labels flex items-start justify-start">
+          <label for="" class="mr-20 mt-2">Name</label>
+          <label for="" class="mr-24 mt-2">Author</label>
+          <label for="" class="mr-52 mt-2">Rate</label>
+        </div>
+        <div class="adding flex items-center justify-center">
+          <input type="text" class="p-1 m-2 w-1/6 bg-[#1c1c1c] name">
+          <input type="text" class="p-1 m-2 w-1/6 bg-[#1c1c1c] author">
+          <input type="number" class="p-1 m-2 w-1/6 bg-[#1c1c1c] rate">
+          <button class="p-1 m-2 w-1/6 bg-[#1c1c1c]" onclick="add()">Add</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-60">
+      <a class="p-5" href="https://vk.com/id302289318" target="_blank"><ins class="text-[#20c997]">&copy; VK</ins></a>
+      <a class="p-5" href="https://t.me/+oFtkgoj7TnBlMmYy" target="_blank"><ins class="text-[#20c997]">&copy; Telegram</ins></a>
+      <a class="p-5" href="mailto:egor@unagaev.ru" target="_blank"><ins class="text-[#20c997]">&copy; Mail</ins></a>
+      <a class="p-5" href="https://github.com/AwesomeWhiteWolf" target="_blank"><ins class="text-[#20c997]">&copy; GitHub</ins></a>
+    </footer>
+
+    <script src="script.js" async></script>
+  </body>
+</html>
